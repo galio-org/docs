@@ -29,7 +29,7 @@ render() {
 
 # Components
 
-We always continue to improve and create more components. Watch us closely and build with us.
+We're always finding new ways to improve and create more components. Watch us closely and build with us.
 
 
 ## Block
