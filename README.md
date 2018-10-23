@@ -25,7 +25,8 @@ render() {
       <Text p muted>Hi, I'm a Galio component</Text>
     </View>
   );
-}```
+}
+```
 
 # Components
 
@@ -214,9 +215,11 @@ It's never been easier to write and style text. We're using a helper function to
 **Usage**
 
 Simple example:
+
 ```
 <Text p>Galio is awesome</Text>
 ```
+
 **Props**
 
 |  Prop  |  Type  | Default |                  Description                 |
