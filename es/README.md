@@ -67,7 +67,7 @@ Ejemplo sencillo:
 
 ## Button
 
-Un bonito botón que encaja incluso con los desarrolladores más exigente.
+Un bonito botón que encaja incluso con los desarrolladores más exigentes.
 
 **Uso**
 
@@ -121,22 +121,22 @@ Ejemplo sencillo:
 
 **Props**
 
-|      Prop       |     Type     | Default |                                                     Descripción                                                     |
-| :-------------: | :----------: | :-----: | :-----------------------------------------------------------------------------------------------------------------: |
-|      card       |     bool     |  true   |                                            Añade los estilos necesarios                                             |
-|     shadow      |     bool     |  true   |                                    Añade los estilos necesarios para las sombras                                    |
-|   borderless    |     bool     |  false  |                                                 Añade borde al Card                                                 |
-|      image      |    string    |  null   |                                     Escribe la ruta relativa o URL a la imagen                                      |
-| imageBlockStyle |    string    |  null   |                                    Estilos para el Block que envuelve la imagen                                     |
-|   imageStyle    |    object    |  null   |                                               Estilos para la imagen                                                |
-|     avatar      |    string    |  null   |                                Escribe la ruta relativa o URL a la imagen del avatar                                |
-|    location     |    string    |  null   |                               De dónde viene esto? Escribe la localización del autor                                |
-|  locationColor  | bool, string |  false  | El valor por defecto de locationColor está basado en themes.COLORS.MUTED, pero puedes cambiarlo por tu propio color |
-|      title      |    string    |  null   |                                        Escribe el título principal del Card                                         |
-|   titleColor    |    string    |  null   |                                             Cambia el color del título                                              |
-|     caption     |    string    |         |                                             Escribe la leyenda del Card                                             |
-|  captionColor   |    string    |         |                                            Cambia el color de la leyenda                                            |
-|   footerStyle   |    object    |         |                           Estilos para el Block que envuelve la sección entera del autor                            |
+|      Prop       |     Type     | Valor por defecto |                                                     Descripción                                                     |
+| :-------------: | :----------: | :---------------: | :-----------------------------------------------------------------------------------------------------------------: |
+|      card       |     bool     |       true        |                                            Añade los estilos necesarios                                             |
+|     shadow      |     bool     |       true        |                                    Añade los estilos necesarios para las sombras                                    |
+|   borderless    |     bool     |       false       |                                                 Añade borde al Card                                                 |
+|      image      |    string    |       null        |                                     Escribe la ruta relativa o URL a la imagen                                      |
+| imageBlockStyle |    string    |       null        |                                    Estilos para el Block que envuelve la imagen                                     |
+|   imageStyle    |    object    |       null        |                                               Estilos para la imagen                                                |
+|     avatar      |    string    |       null        |                                Escribe la ruta relativa o URL a la imagen del avatar                                |
+|    location     |    string    |       null        |                               De dónde viene esto? Escribe la localización del autor                                |
+|  locationColor  | bool, string |       false       | El valor por defecto de locationColor está basado en themes.COLORS.MUTED, pero puedes cambiarlo por tu propio color |
+|      title      |    string    |       null        |                                        Escribe el título principal del Card                                         |
+|   titleColor    |    string    |       null        |                                             Cambia el color del título                                              |
+|     caption     |    string    |                   |                                             Escribe la leyenda del Card                                             |
+|  captionColor   |    string    |                   |                                            Cambia el color de la leyenda                                            |
+|   footerStyle   |    object    |                   |                           Estilos para el Block que envuelve la sección entera del autor                            |
 
 ## Icono
 
@@ -222,7 +222,7 @@ Ejemplo sencillo:
 
 ## Texto
 
-It's never been easier to write and style text. We're using a helper function to normalize the next so that it could look good on any kind of device.
+Nunca ha sido tan sencillo escribir texto y añadirle estilo. Estamos usando una función de ayuda para normalizar los siguiente, de forma que el texto pueda verse genial en cualquier dispositivo.
 
 **Uso**
 
