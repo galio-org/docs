@@ -15,7 +15,7 @@ Simple example:
 | bottom      |     bool     |  false  |    alignItems: 'flex-end' alignSelf: 'flex-end'    |
 | card        |     bool     |  false  | changes the View's border-radus, -width and -color |
 | center      |     bool     |  false  |      alignItems: 'center' alignSelf: 'center'      |
-| flex        | bool, number |  false  |             flex: 1 **or** <yourNumber>            |
+| flex        | bool, number |  false  |             flex: 1 **or** `<yourNumber>`            |
 | fluid       |     bool     |  false  |                    width: 'auto'                   |
 | height      |    number    |   null  | changes the height of the Block                    |
 | left        |     bool     |  false  | alignItems: 'flex-start'                           |
