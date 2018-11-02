@@ -4,10 +4,10 @@
   * [Cómo instalar Galio](es/install.md)
 * **Componentes**
 
-  * [Block](es/components/block.md)
-  * [Button](es/components/button.md)
-  * [Card](es/components/card.md)
-  * [Icon](es/components/icon.md)
-  * [Input](es/components/input.md)
-  * [NavBar](es/components/navbar.md)
-  * [Text](es/components/text.md)
+  * [Block](es/block.md)
+  * [Button](es/button.md)
+  * [Card](es/card.md)
+  * [Icon](es/icon.md)
+  * [Input](es/input.md)
+  * [NavBar](es/navbar.md)
+  * [Text](es/text.md)
