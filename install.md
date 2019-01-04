@@ -4,7 +4,7 @@ Just add it as an npm/yarn dependency:
 
 ```npm install galio-framework```
 or
-```yarn install galio-framework```
+```yarn add galio-framework```
 
 And just import the component you want in your application:
 
