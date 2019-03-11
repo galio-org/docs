@@ -13,5 +13,5 @@ This component was built on top of React Native's Switch component and so it inh
 |     initialValue    |                                      bool                                      |                                false                               |             |
 |      trackColor     |                                     object                                     | { false: GalioTheme.COLORS.GREY, true: GalioTheme.COLORS.PRIMARY } |             |
 | ios_backgroundColor |                                     string                                     |                       GalioTheme.COLORS.GREY                       |             |
-|    onValueChange    |                                    function                                    |                              () => {}                              |             |
+|    onChange    |                                    function                                    |                              () => {}                              |             |
 | ...Switch.propTypes |                                                                                |                                                                    |             |
