@@ -1,3 +1,7 @@
+<a href="http://galio.io" target="_blank">
+<img src="assets/logo.png" />
+</a>
+
 * [**Get Started**](/)
 
   * [How to install](install.md)

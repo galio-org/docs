@@ -2,6 +2,10 @@
 
 Un input simple y personalizable que amarás usar.
 
+<p align="center">
+ <img src="assets/10.png" />
+</p>
+
 **Uso**
 
 Ejemplo sencillo:

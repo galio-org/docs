@@ -1,6 +1,10 @@
 # Text
 It's never been easier to write and style text. We're using a helper function to normalize the next so that it could look good on any kind of device.
 
+<p align="center">
+  <img src="assets/9.png" />
+</p>
+
 **Usage**
 
 Simple example:
