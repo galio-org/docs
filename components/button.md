@@ -1,6 +1,10 @@
 # Button
 A nice button which suits even the most picky developers.
 
+<p align="center">
+ <img src="https://i.imgur.com/JjkraTc.png" />
+</p>
+
 **Usage**
 
 Simple example:

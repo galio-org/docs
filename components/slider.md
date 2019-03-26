@@ -3,7 +3,7 @@
 We all need a slider in our application. This is a JavaScript component built with the PanResponder and Animated APIs.
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/slider-example.png" />
+ <img src="https://i.imgur.com/sp42kcd.png" />
 </p>
 
 

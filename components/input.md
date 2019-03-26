@@ -1,6 +1,10 @@
 # Input
 A simple customizable input you'll love using.
 
+<p align="center">
+ <img src="https://i.imgur.com/45hLNIp.png" />
+</p>
+
 **Usage**
 
 Simple example:

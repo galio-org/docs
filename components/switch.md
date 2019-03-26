@@ -3,7 +3,7 @@
 This component was built on top of React Native's Switch component and so it inherits all the props the native component has.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/switch-example.png" />
+  <img src="https://i.imgur.com/0HX86f2.png" />
 </p>
 
 |         Prop        |                                      Type                                      |                               Default                              | Description |

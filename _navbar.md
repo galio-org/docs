@@ -1,5 +1,5 @@
 <!-- _navbar.md -->
 
-* **Translations**
+* 🇺🇸 **English**
   * 🇺🇸 **English**
   * [🇪🇸 Spanish](es/)

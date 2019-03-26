@@ -3,7 +3,7 @@
 Check... Check... Check. We got everything under control.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/checkbox-example.png" />
+  <img src="https://i.imgur.com/Vnyf1pJ.png" />
 </p>
 
 |      Prop     |                                Type                               |    Default    |                                              Description                                             |

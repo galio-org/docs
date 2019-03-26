@@ -3,7 +3,7 @@
 Check out how awesome these radio buttons look! Who wouldn't want to use them?
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/radio-example.png">
+  <img src="https://i.imgur.com/3J49DW9.png">
 </p>
 
 |       Prop      |                                  Type                                 |  Default  | Description |
