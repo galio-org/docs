@@ -2,6 +2,10 @@
 
 Dijo alguién que necesitabas una Card? Menos mal que tenemos una.
 
+<p align="center">
+ <img src="https://i.imgur.com/P9eFZap.png" />
+</p>
+
 **Uso**
 
 Ejemplo sencillo:

@@ -2,6 +2,10 @@
 
 Nunca ha sido tan sencillo escribir texto y añadirle estilo. Estamos usando una función de ayuda para normalizar los siguiente, de forma que el texto pueda verse genial en cualquier dispositivo.
 
+<p align="center">
+  <img src="assets/9.png" />
+</p>
+
 **Uso**
 
 Ejemplo sencillo:

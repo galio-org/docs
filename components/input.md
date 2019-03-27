@@ -1,6 +1,10 @@
 # Input
 A simple customizable input you'll love using.
 
+<p align="center">
+ <img src="assets/10.png" />
+</p>
+
 **Usage**
 
 Simple example:

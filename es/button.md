@@ -2,6 +2,10 @@
 
 Un bonito botón que encaja incluso con los desarrolladores más exigentes.
 
+<p align="center">
+ <img src="https://i.imgur.com/JjkraTc.png" />
+</p>
+
 **Uso**
 
 Ejemplo sencillo:

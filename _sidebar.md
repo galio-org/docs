@@ -1,7 +1,12 @@
-<a href="http://galio.io" style="color: #ff006e; text-decoration: underline;">Back to Galio</a>
-* [**Get Started**](/)
+<a href="http://galio.io">
+<img src="assets/logo.png" />
+<p>Galio</p>
+</a>
+
+* [**Get Started**](/README.md)
 
   * [How to install](install.md)
+  * [GalioTheme](GalioTheme.md)
 * **Components**
 
   * [Block](components/block.md)
