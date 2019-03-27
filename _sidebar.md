@@ -1,5 +1,6 @@
 <a href="http://galio.io" target="_blank">
 <img src="assets/logo.png" />
+<p>Galio</p>
 </a>
 
 * [**Get Started**](/)

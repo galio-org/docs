@@ -1,8 +1,8 @@
-![logo](assets/logo.png)
+[![logo](assets/logo.png)](https://galio.io ':target=_self')
 
-# galio-framework <small>0.5</small>
+# galio <small>v0.5</small>
 
-> The most beautiful UI kit for React-Native.
+> The most beautiful UI library for React-Native.
 
 - Lightweight <b>(~55.11KiB)</b>
 - Simple to use

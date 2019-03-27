@@ -1,9 +1,7 @@
 
 <div style="width: 80%; text-align: center; margin: auto">
 
-<img src="assets/logo.png">
-
-<b><p style="font-size: 30px">Galio</p></b>
+<b><p style="font-size: 50px">Galio framework</p></b>
 
 [![GitHub issues](https://img.shields.io/github/issues/galio-org/galio.svg?style=popout)](https://github.com/galio-org/galio/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/galio-org/galio.svg)](https://github.com/galio-org/galio/issues?q=is%3Aissue+is%3Aclosed)
@@ -58,7 +56,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 * Licensed under [MIT](https://github.com/galio-org/galio/blob/master/LICENSE)
 
-© 2019 [Galio](https://galio.io?ref=galio-repo), made with 💚 for the community.
+© 2019 [Galio](https://galio.io?ref=galio-repo), made with ❤️ for the community.
 
 
 

@@ -1,6 +1,6 @@
 # Checkbox 
 
-Check... Check... Check. We got everything under control.
+Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. 
 
 <p align="center">
   <img src="https://i.imgur.com/Vnyf1pJ.png" />

@@ -1,71 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>@ galio</title>
-  <link rel="icon" href="assets/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Free and Open Source React Native Framework ">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify-themeable/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="//unpkg.com/element-ui/lib/theme-chalk/index.css">
-  <style>
-    :root {
-      --theme-color: #ff006e;  
-    }
-    .sidebar-nav li>a[href^="#/"]:not([href*="?id="]):only-child {
-      background-image: none;
-    }
-    .cover:before {
-      background: #ee9ca7;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to bottom, #ffdde1, #fcbac3);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to bottom, #ffdde1, #fcbac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-  </style>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MJ9SQDH');</script>
-  <!-- End Google Tag Manager -->
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ9SQDH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      // link to galio github
-      repo: 'https://github.com/galio-org/galio',
-      alias: {
-        '/es/_navbar.md': '/es/_navbar.md',
-        '/es/_sidebar.md': '/es/_sidebar.md',
-        '/es/components': '/es/_sidebar.md',
-        '/.*/_navbar.md': '/_navbar.md',
-        '/.*/_sidebar.md': '/_sidebar.md',
-      },
-      // load navbar into sidebar on small screen
-      mergeNavbar: true,
-      // load sidebar
-      loadSidebar: true,
-      // load navbar
-      loadNavbar: true,
-      coverpage: true,
-      auto2top: true,
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="https://unpkg.com/docsify-copy-code@2"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'galio-community/Lobby'
-    };
+  <head>
+    <meta charset="UTF-8" />
+    <title>@ galio</title>
+    <link rel="icon" href="assets/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="Free and Open Source React Native Framework "
+    />
+    <meta
+      name="keywords"
+      content="galio, mobile framework, android react native, ios react native, free mobile framework, galio docs, react native docs, react native, free react native, open source react native, ui library, mit license, mobile app, documentation, docs, components, navbar, checkbox, react native navbar, react native documentation, galio documentation, ui library components, beautiful ui library"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/docsify-themeable/dist/css/theme-simple.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <style>
+      :root {
+        --theme-color: #ff006e;
+      }
+      .cover:before {
+        /*background: #ee9ca7;  /* fallback for old browsers 
+      background: -webkit-linear-gradient(to bottom, #ffdde1, #fcbac3);  /* Chrome 10-25, Safari 5.1-6 
+      background: linear-gradient(to bottom, #ffdde1, #fcbac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+      */
+        background-color: white;
+        background: url("assets/header-bg.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .cover h1 {
+        color: black;
+      }
+      .sidebar-nav li > a[href^="#/"]:not([href*="?id="]):only-child {
+        background-image: none;
+      }
+      .sidebar-nav > a {
+        text-align: center;
+      }
+      .sidebar-nav a img {
+        width: 120px;
+      }
+      .sidebar-nav > a p {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      .gitter-open-chat-button,
+      .gitter-open-chat-button:visited,
+      .gitter-open-chat-button:hover {
+        box-sizing: border-box;
+        color: #fff;
+        background-color: #ff147c;
+      }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJ9SQDH");
     </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-</body>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJ9SQDH"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        // link to galio github
+        repo: "https://github.com/galio-org/galio",
+        alias: {
+          "/es/_navbar.md": "/es/_navbar.md",
+          "/es/_sidebar.md": "/es/_sidebar.md",
+          "/es/components": "/es/_sidebar.md",
+          "/.*/_navbar.md": "/_navbar.md",
+          "/.*/_sidebar.md": "/_sidebar.md"
+        },
+        // load navbar into sidebar on small screen
+        mergeNavbar: true,
+        // load sidebar
+        loadSidebar: true,
+        // load navbar
+        loadNavbar: true,
+        coverpage: true,
+        auto2top: true
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: "galio-community/Lobby"
+      };
+    </script>
+    <script
+      src="https://sidecar.gitter.im/dist/sidecar.v1.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>
