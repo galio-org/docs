@@ -1,9 +1,9 @@
-<a href="http://galio.io" target="_blank">
+<a href="http://galio.io">
 <img src="assets/logo.png" />
 <p>Galio</p>
 </a>
 
-* [**Get Started**](/)
+* [**Get Started**](/README.md)
 
   * [How to install](install.md)
   * [GalioTheme](GalioTheme.md)

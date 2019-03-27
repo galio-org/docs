@@ -1,6 +1,6 @@
 [![logo](assets/logo.png)](https://galio.io ':target=_self')
 
-# galio <small>v0.5</small>
+# Galio <small>v0.5</small>
 
 > The most beautiful UI library for React-Native.
 

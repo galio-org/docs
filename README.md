@@ -1,7 +1,7 @@
 
 <div style="width: 80%; text-align: center; margin: auto">
 
-<b><p style="font-size: 50px">Galio framework</p></b>
+<b><p style="font-size: 50px" id="galio">Galio framework</p></b>
 
 [![GitHub issues](https://img.shields.io/github/issues/galio-org/galio.svg?style=popout)](https://github.com/galio-org/galio/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/galio-org/galio.svg)](https://github.com/galio-org/galio/issues?q=is%3Aissue+is%3Aclosed)
