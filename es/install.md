@@ -4,7 +4,7 @@ Añádelo como una dependencia con npm/yarn:
 
 `npm install galio-framework`
 ó
-`yarn install galio-framework`
+`yarn add galio-framework`
 
 A continuación importa los componentes que quieras usar en tu aplicación:
 
