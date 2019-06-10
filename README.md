@@ -57,7 +57,3 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 * Licensed under [MIT](https://github.com/galio-org/galio/blob/master/LICENSE)
 
 © 2019 [Galio](https://galio.io?ref=galio-repo), made with ❤️ for the community.
-
-
-
-
