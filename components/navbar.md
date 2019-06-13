@@ -19,6 +19,7 @@ Simple example:
 | left          | node         | null              | Left side of the NavBar                                       |
 | leftStyle     | object       | null              | Sets the styling for the View wrapping the left side element. |
 | leftIconColor | string       | theme.COLORS.ICON | Sets the color of the left side's icon.                       |
-| onLeftPress   | function     | () => {}          | Function for the left side of the navbar                      |
+| onLeftPress   | function     | () => {}          | Function for the left side of the navbar     
+| leftHitSlop   | object     | null          | hitSlop for the left icon, works only if left is null   |
 | right         | node         | null              | Right side of the NavBar                                      |
 | rightStyle    | object       | null              | Sets the styling for the View wrapping the left side element. |
