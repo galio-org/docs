@@ -4,7 +4,7 @@ The main component used to create almost everything in your app.
 **Usage**
 
 Simple example:
-```
+```jsx
 <Block>{children}</Block>
 ```
 

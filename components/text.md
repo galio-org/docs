@@ -9,7 +9,7 @@ It's never been easier to write and style text. We're using a helper function to
 
 Simple example:
 
-```
+```jsx
 <Text p>Galio is awesome</Text>
 ```
 

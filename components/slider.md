@@ -6,6 +6,20 @@ We all need a slider in our application. This is a JavaScript component built wi
  <img src="https://i.imgur.com/sp42kcd.png" />
 </p>
 
+**Usage**
+
+Simple example:
+```jsx
+<Block flex>
+  <Slider
+    maximumValue={30}
+    value={10}
+    onSlidingcomplete={() => this.registerTheValue()}
+  />
+</Block>
+```
+
+**Props**
 
 |        Prop       |  Type  |  Default |                                            Description                                           |
 |:-----------------:|:------:|:--------:|:------------------------------------------------------------------------------------------------:|

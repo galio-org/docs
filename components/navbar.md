@@ -4,7 +4,7 @@ How are your clients going to know which screen they're visiting if you don't ha
 **Usage**
 
 Simple example:
-```
+```jsx
 <Navbar title="Screen Title" />
 ```
 

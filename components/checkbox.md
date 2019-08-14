@@ -6,6 +6,23 @@ Checkboxes allow users to complete tasks that involve making choices such as sel
   <img src="https://i.imgur.com/Vnyf1pJ.png" />
 </p>
 
+**Usage**
+
+Simple example:
+```jsx
+<Checkbox
+  checkboxStyle={{
+    borderWidth: 3
+  }}
+  color={galioTheme.COLORS.PRIMARY}
+  labelStyle={{
+    color: galioTheme.COLORS.TEXT,
+  }}
+  label="Thanks for checking this checkbox"
+/>
+```
+
+**Props**
 |      Prop     |                                Type                               |    Default    |                                              Description                                             |
 |:-------------:|:-----------------------------------------------------------------:|:-------------:|:----------------------------------------------------------------------------------------------------:|
 | checkboxStyle |                                any                                |      null     |                By sending an object you can style the checkbox's color, size and more.               |

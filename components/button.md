@@ -8,7 +8,7 @@ A nice button which suits even the most picky developers.
 **Usage**
 
 Simple example:
-```
+```jsx
 <Button>Press here!</Button>
 ```
 

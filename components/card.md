@@ -8,14 +8,18 @@ Did anybody say you need a card? Good think we have one.
 **Usage**
 
 Simple example:
-```
-<Card 
-  neutral
-  fullBackgroundImage
-  image="https://images.unsplash.com/photo-1536567893079-f54abdc73dc2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e6a56a131b11a6366446c42381192329&auto=format&fit=crop&w=1350&q=80"
-  authorImageSrc="http://i.pravatar.cc/100"
-  authorTitle="Offset"
-  authorSubTitle="420 minutes ago"
+```jsx
+<Card
+  flex
+  borderless
+  style={styles.card}
+  title="Christopher Moon"
+  caption="139 minutes ago"
+  location="Los Angeles, CA"
+  avatar="http://i.pravatar.cc/100?id=skater"
+  imageStyle={styles.cardImageRadius}
+  imageBlockStyle={{ padding: theme.SIZES.BASE / 2 }}
+  image="https://images.unsplash.com/photo-1497802176320-541c8e8de98d?&w=1600&h=900&fit=crop&crop=entropy&q=300"
 />
 ```
 
@@ -38,3 +42,4 @@ Simple example:
 | captionColor    | string       |         | change your caption's color                                                                      |
 | footerStyle     | object       |         | styles for the block wrapping the whole author's section                                         |
 
+_The Card components accepts every piece of prop the `<Block />` component accepts. Those will be applied on the `<Block />` which wraps the whole `<Card />` component._

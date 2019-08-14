@@ -6,6 +6,20 @@ Check out how awesome these radio buttons look! Who wouldn't want to use them?
   <img src="https://i.imgur.com/3J49DW9.png">
 </p>
 
+**Usage**
+
+Simple example:
+```jsx
+<Radio 
+  label="This looks like a nice option"
+  color={galioTheme.COLORS.PRIMARY}
+  initialValue={true}
+  disabled
+/>
+```
+
+**Props**
+
 |       Prop      |                                  Type                                 |  Default  | Description |
 |:---------------:|:---------------------------------------------------------------------:|:---------:|:-----------:|
 |      color      |                                 string                                | 'primary' |             |

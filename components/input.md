@@ -8,8 +8,10 @@ A simple customizable input you'll love using.
 **Usage**
 
 Simple example:
-```
-<Input placeholder="Email" />
+```jsx
+<Block>
+  <Input placeholder="Email" />
+</Block>
 ```
 
 **Props**

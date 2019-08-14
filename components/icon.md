@@ -4,7 +4,7 @@ That little Facebook icon never looked better.
 **Usage**
 
 Simple example:
-```
+```jsx
 <Icon name="pin-3" family="Galio" color={rgb(100,120,40)} size={10} />
 ```
 
