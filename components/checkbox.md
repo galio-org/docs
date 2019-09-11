@@ -23,8 +23,9 @@ Simple example:
 ```
 
 **Props**
-|      Prop     |                                Type                               |    Default    |                                              Description                                             |
-|:-------------:|:-----------------------------------------------------------------:|:-------------:|:----------------------------------------------------------------------------------------------------:|
+
+|              Prop             |     Type     |       Default      |                                              Description                                             |
+|:-----------------------------:|:------------:|:------------------:|:----------------------------------------------------------------------------------------------------:|
 | checkboxStyle |                                any                                |      null     |                By sending an object you can style the checkbox's color, size and more.               |
 |    disabled   |                                bool                               |     false     |                       This disables the possibility of the checkbox being used.                      |
 | flexDirection | oneOf(['row', 'row-reverse', 'column', 'column-reverse']), string |     'row'     |         Maybe you need the checkbox to be on top of an image? You can do that with this prop.        |
