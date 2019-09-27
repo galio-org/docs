@@ -6,7 +6,11 @@ We all need a slider in our application. This is a JavaScript component built wi
  <img src="https://i.imgur.com/sp42kcd.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Slider, Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -19,7 +23,7 @@ Simple example:
 </Block>
 ```
 
-**Props**
+### Props
 
 |        Prop       |  Type  |  Default |                                            Description                                           |
 |:-----------------:|:------:|:--------:|:------------------------------------------------------------------------------------------------:|

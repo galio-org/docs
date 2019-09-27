@@ -1,14 +1,18 @@
 # Icon
 That little Facebook icon never looked better.
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Icon } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
 <Icon name="pin-3" family="Galio" color={rgb(100,120,40)} size={10} />
 ```
 
-**Props**
+### Props
 
 |  Prop  |  Type  |       Default      |                  Description                  |
 |:------:|:------:|:------------------:|:---------------------------------------------:|
