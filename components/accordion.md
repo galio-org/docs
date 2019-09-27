@@ -3,11 +3,17 @@ Having different information with a drop-down so your users can realy whatever t
 
 **Image**
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Accordion, Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
+<Block style={{ height: 200 }}>
   <Accordion dataArray={data} />
+</Block>
 ```
 
 The data array looks like:
@@ -25,7 +31,7 @@ const data = [
 ];
 ```
 
-**Props**
+### Props
 
 |       Prop       |    Type   |  Default |                                                    Description                                                   |
 |:----------------:|:---------:|:--------:|:----------------------------------------------------------------------------------------------------------------:|

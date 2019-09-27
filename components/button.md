@@ -5,14 +5,18 @@ A nice button which suits even the most picky developers.
  <img src="https://i.imgur.com/JjkraTc.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Button } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
 <Button>Press here!</Button>
 ```
 
-**Props**
+### Props
 
 |              Prop             |     Type     |       Default      |                                              Description                                             |
 |:-----------------------------:|:------------:|:------------------:|:----------------------------------------------------------------------------------------------------:|

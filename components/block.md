@@ -1,14 +1,18 @@
 # Block
 The main component used to create almost everything in your app.
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
 <Block>{children}</Block>
 ```
 
-**Props**
+### Props
 
 |     Prop    |     Type     | Default |                     Description                    |
 |:-----------:|:------------:|:-------:|:--------------------------------------------------:|

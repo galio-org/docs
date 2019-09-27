@@ -5,7 +5,11 @@ A simple customizable input you'll love using.
  <img src="assets/10.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Input, Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -14,7 +18,7 @@ Simple example:
 </Block>
 ```
 
-**Props**
+### Props
 
 |         Prop         |  Type  |          Default         |                                                                            Description                                                                            |
 |:--------------------:|:------:|:------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|

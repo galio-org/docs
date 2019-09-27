@@ -6,7 +6,11 @@ Checkboxes allow users to complete tasks that involve making choices such as sel
   <img src="https://i.imgur.com/Vnyf1pJ.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Checkbox } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -22,7 +26,7 @@ Simple example:
 />
 ```
 
-**Props**
+### Props
 |      Prop     |                                Type                               |    Default    |                                              Description                                             |
 |:-------------:|:-----------------------------------------------------------------:|:-------------:|:----------------------------------------------------------------------------------------------------:|
 | checkboxStyle |                                any                                |      null     |                By sending an object you can style the checkbox's color, size and more.               |

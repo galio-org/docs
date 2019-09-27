@@ -5,7 +5,11 @@ It's never been easier to write and style text. We're using a helper function to
   <img src="assets/9.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Text } from 'galio-framework';
+```
 
 Simple example:
 
@@ -13,7 +17,7 @@ Simple example:
 <Text p>Galio is awesome</Text>
 ```
 
-**Props**
+### Props
 
 |  Prop  |  Type  | Default |                  Description                 |
 |:------:|:------:|:-------:|:--------------------------------------------:|

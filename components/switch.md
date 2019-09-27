@@ -6,7 +6,11 @@ This component was built on top of React Native's Switch component and so it inh
   <img src="https://i.imgur.com/0HX86f2.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Switch} from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -16,7 +20,7 @@ Simple example:
 />
 ```
 
-**Props**
+### Props
 
 |         Prop        |                                      Type                                      |                               Default                              | Description |
 |:-------------------:|:------------------------------------------------------------------------------:|:------------------------------------------------------------------:|:-----------:|

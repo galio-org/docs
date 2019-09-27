@@ -4,7 +4,11 @@ Toast notifications appear when the user finishes an action and you want to show
 
 **Image**
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Toast, Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -13,7 +17,7 @@ Simple example:
 </Toast>
 ```
 
-**Props**
+### Props
 |        Prop       |     Type    |  Default  |                                              Description                                             |
 |:-----------------:|:-----------:|:---------:|:----------------------------------------------------------------------------------------------------:|
 |       style       |    object   |    null   |                                  Styling the Block which encapsulate                                 |

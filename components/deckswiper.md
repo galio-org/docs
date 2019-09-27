@@ -4,35 +4,40 @@ Swipe left, swipe right or don't swipe at all, this component is built to accept
 
 **image**
 
-**Usage**
+### Usage
+Imports:
+```js
+import { DeckSwiper, Block } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
+<Block>
   <DeckSwiper components={elements} />
+</Block>
 ```
 The elements array looks like following:
 ```jsx
 const elements = [
-  <View style={{ backgroundColor: 'red', height: 150, width: 150 }}>
-    <Text>You wanna see some weird shit?</Text>
-    <Text>Expect the worst</Text>
+  <View style={{ backgroundColor: 'red', height: 250, width: 250 }}>
+    <Text>You wanna see a cool component?</Text>
+    <Text>Galio has this cool Deck Swiper</Text>
   </View>,
-  <View style={{ backgroundColor: 'blue', height: 150, width: 150 }}>
+  <View style={{ backgroundColor: 'blue', height: 250, width: 250 }}>
     <Text>What did you expect?</Text>
-    <Text>Nothing, you big ass weird shit</Text>
+    <Text>This React Native component works perfectly</Text>
   </View>,
-  <View style={{ backgroundColor: 'green', height: 150, width: 150 }}>
-    <Text>Broski... Calmeaza-te... You ain't shit</Text>
-    <Text>Trust me about that</Text>
+  <View style={{ backgroundColor: 'green', height: 250, width: 250 }}>
+    <Text>Maybe you want to build the next Tinder</Text>
   </View>,
-  <View style={{ backgroundColor: 'yellow', height: 150, width: 150 }}>
-    <Text>Y'all expecting to win but only one of us can really do it</Text>
-    <Text>Trust me, it's gonna be me.</Text>
+  <View style={{ backgroundColor: 'yellow', height: 250, width: 250 }}>
+    <Text>or maybe you just want a nice deck swiper component</Text>
+    <Text>Galio has everything sorted out for you</Text>
   </View>
 ];
 ```
 
-**Props**
+### Props
 
 |         Prop        |   Type   | Default |                              Description                              |
 |:-------------------:|:--------:|:-------:|:---------------------------------------------------------------------:|

@@ -6,7 +6,11 @@ Check out how awesome these radio buttons look! Who wouldn't want to use them?
   <img src="https://i.imgur.com/3J49DW9.png">
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Radio } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -18,7 +22,7 @@ Simple example:
 />
 ```
 
-**Props**
+### Props
 
 |       Prop      |                                  Type                                 |  Default  | Description |
 |:---------------:|:---------------------------------------------------------------------:|:---------:|:-----------:|

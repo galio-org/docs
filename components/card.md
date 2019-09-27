@@ -5,7 +5,11 @@ Did anybody say you need a card? Good think we have one.
  <img src="https://i.imgur.com/P9eFZap.png" />
 </p>
 
-**Usage**
+### Usage
+Imports:
+```js
+import { Card } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
@@ -23,7 +27,7 @@ Simple example:
 />
 ```
 
-**Props**
+### Props
 
 |       Prop      |     Type     | Default |                                            Description                                           |
 |:---------------:|:------------:|:-------:|:------------------------------------------------------------------------------------------------:|

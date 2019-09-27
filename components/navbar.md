@@ -1,14 +1,18 @@
 # NavBar
 How are your clients going to know which screen they're visiting if you don't have a navbar component?
 
-**Usage**
+### Usage
+Imports:
+```js
+import { NavBar } from 'galio-framework';
+```
 
 Simple example:
 ```jsx
-<Navbar title="Screen Title" />
+<NavBar title="Screen Title" />
 ```
 
-**Props**
+### Props
 
 |      Prop     |     Type     |      Default      |                          Description                          |
 |:-------------:|:------------:|:-----------------:|:-------------------------------------------------------------:|
