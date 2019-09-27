@@ -52,7 +52,7 @@ DRIBBBLE | #EA4C89 | ![](https://dummyimage.com/40x12/EA4C89/000000.png&text=+) 
 THEME | #B23AFC | ![](https://dummyimage.com/40x12/B23AFC/000000.png&text=+) Theme default color
 PRIMARY | #B23AFC | ![](https://dummyimage.com/40x12/B23AFC/000000.png&text=+) Primary color for Buttons
 INFO | #1232FF | ![](https://dummyimage.com/40x12/1232FF/000000.png&text=+) Info color for Buttons & Text
-ERROR | #FE2472 | ![](https://dummyimage.com/40x12/FE2472/000000.png&text=+) Info color for error messages
+ERROR | #FE2472 | ![](https://dummyimage.com/40x12/FE2472/000000.png&text=+) Error color for error messages
 WARNING | #FF9C09 | ![](https://dummyimage.com/40x12/FF9C09/000000.png&text=+) Warning color for warning messages
 SUCCESS | #45DF31 | ![](https://dummyimage.com/40x12/45DF31/000000.png&text=+) Success color for success messages
 **COMPONENTS** | 

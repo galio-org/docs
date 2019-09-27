@@ -1,8 +1,7 @@
 # Toast Notification
 Toast notifications appear when the user finishes an action and you want to show him a piece of information without redirecting him to another screen.
 
-
-**Image**
+![Toast Notification](../assets/Toast-notification.gif)
 
 ### Usage
 Imports:
@@ -12,9 +11,15 @@ import { Toast, Block } from 'galio-framework';
 
 Simple example:
 ```jsx
-<Toast isShow={true} position={"bottom"}>
-  Galio is still great, nothing changed.
-</Toast>
+<Button shadowless onPress={() => setShow(!isShow)} style={{ marginBottom: 80 }}>click here for toast notifications</Button>
+<Toast isShow={isShow} positionIndicator="top">This is a top positioned toast</Toast>
+<Toast isShow={isShow} positionIndicator="center" color="success">This is a center positioned toast</Toast>
+<Toast isShow={isShow} positionIndicator="bottom" color="warning">This is a bottom positioned toast</Toast>
+```
+
+Hook used for `isShow`:
+```js
+const [isShow, setShow] = useState(false);
 ```
 
 ### Props

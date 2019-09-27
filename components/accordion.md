@@ -1,7 +1,7 @@
 # Accordion
 Having different information with a drop-down so your users can realy whatever they're really interested in.
 
-**Image**
+![Accordion](../assets/accordion.gif)
 
 ### Usage
 Imports:

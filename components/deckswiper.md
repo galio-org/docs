@@ -2,7 +2,7 @@
 
 Swipe left, swipe right or don't swipe at all, this component is built to accept any type of component and make it swipeable.
 
-**image**
+![Deck Swiper](../assets/deck-swiper.gif)
 
 ### Usage
 Imports:
@@ -19,18 +19,18 @@ Simple example:
 The elements array looks like following:
 ```jsx
 const elements = [
-  <View style={{ backgroundColor: 'red', height: 250, width: 250 }}>
+  <View style={{ backgroundColor: '#B23AFC', height: 250, width: 250 }}>
     <Text>You wanna see a cool component?</Text>
     <Text>Galio has this cool Deck Swiper</Text>
   </View>,
-  <View style={{ backgroundColor: 'blue', height: 250, width: 250 }}>
+  <View style={{ backgroundColor: '#FE2472', height: 250, width: 250 }}>
     <Text>What did you expect?</Text>
     <Text>This React Native component works perfectly</Text>
   </View>,
-  <View style={{ backgroundColor: 'green', height: 250, width: 250 }}>
+  <View style={{ backgroundColor: '#FF9C09', height: 250, width: 250 }}>
     <Text>Maybe you want to build the next Tinder</Text>
   </View>,
-  <View style={{ backgroundColor: 'yellow', height: 250, width: 250 }}>
+  <View style={{ backgroundColor: '#45DF31', height: 250, width: 250 }}>
     <Text>or maybe you just want a nice deck swiper component</Text>
     <Text>Galio has everything sorted out for you</Text>
   </View>
