@@ -11,11 +11,39 @@ Imports:
 import { Input, Block } from 'galio-framework';
 ```
 
-Simple example:
+![input_simple](../assets/input_simple.png)
+
+Code example:
 ```jsx
-<Block>
-  <Input placeholder="Email" />
-</Block>
+<Input placeholder="regular" />
+<Input placeholder="theme" color={theme.COLORS.THEME} style={{ borderColor: theme.COLORS.THEME }} placeholderTextColor={theme.COLORS.THEME} />
+<Input placeholder="info" color={theme.COLORS.INFO} style={{ borderColor: theme.COLORS.INFO }} placeholderTextColor={theme.COLORS.INFO}/>
+<Input placeholder="warning" color={theme.COLORS.WARNING} style={{ borderColor: theme.COLORS.WARNING }} placeholderTextColor={theme.COLORS.WARNING}/>
+<Input placeholder="error" color={theme.COLORS.ERROR} style={{ borderColor: theme.COLORS.ERROR }} placeholderTextColor={theme.COLORS.ERROR}/>
+<Input placeholder="success" color={theme.COLORS.SUCCESS} style={{ borderColor: theme.COLORS.SUCCESS }} placeholderTextColor={theme.COLORS.SUCCESS}/>
+```
+
+![input_advanced](../assets/input_advanced.png)
+
+Code example:
+```jsx
+<Input placeholder="password" password viewPass />
+<Input placeholder="rounded input" rounded />
+<Input
+  placeholder="Input with Icon on right"
+  right
+  icon="heart"
+  family="antdesign"
+  iconSize={14}
+  iconColor="red"
+/>
+<Input
+  placeholder="Input with custom styling and help"
+  style={{ borderColor: "red" }}
+  help="Bottom help text"
+  bottomHelp
+  placeholderTextColor="#4F8EC9"
+/>
 ```
 
 ### Props
