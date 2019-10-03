@@ -11,9 +11,26 @@ Imports:
 import { Button } from 'galio-framework';
 ```
 
-Simple example:
+![buttons_simple](../assets/buttons_simple.png)
+
+Code example:
 ```jsx
-<Button>Press here!</Button>
+<Button>primary</Button>
+<Button color="info">info</Button>
+<Button color="success">success</Button>
+<Button color="warning">warning</Button>
+<Button color="error">error</Button>
+```
+
+![buttons_advanced](../assets/buttons_advanced.png)
+
+Code example:
+```jsx
+<Button capitalize size="small">small size capitalize</Button>
+<Button round uppercase color="error">round uppercase</Button>
+<Button onlyIcon icon="tags" iconFamily="antdesign" iconSize={30} color="warning" iconColor="#fff" style={{ width: 40, height: 40 }}>warning</Button>
+<Button color="#50C7C7" shadowless>custom color and shadowless</Button>
+<Button round size="small" color="success">round and small</Button>
 ```
 
 ### Props
