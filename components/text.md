@@ -14,7 +14,13 @@ import { Text } from 'galio-framework';
 Simple example:
 
 ```jsx
-<Text p>Galio is awesome</Text>
+<Text h1>Heading 1</Text>
+<Text h2>Heading 2</Text>
+<Text h3>Heading 3</Text>
+<Text h4>Heading 4</Text>
+<Text h5>Heading 5</Text>
+<Text p>Paragraph</Text>
+<Text muted>This is a muted paragraph.</Text>
 ```
 
 ### Props
