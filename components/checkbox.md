@@ -37,7 +37,7 @@ Code example:
 ![checkbox_onChange](../assets/checkbox_onChange.gif)
 
 Code example:
-```jsx
+```js
 <Checkbox color="warning" onChange={() => alert('Galio is cool')} label="onChange is here" />
 ```
 
