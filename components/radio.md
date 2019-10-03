@@ -12,14 +12,25 @@ Imports:
 import { Radio } from 'galio-framework';
 ```
 
-Simple example:
+![radio_simple](../assets/radio_simple.png)
+
+Code example:
 ```jsx
-<Radio 
-  label="This looks like a nice option"
-  color={galioTheme.COLORS.PRIMARY}
-  initialValue={true}
-  disabled
-/>
+<Radio label="Primary color Radio" color="primary"  />
+<Radio label="Info color Radio" color="info"  />
+<Radio label="Error color Radio" color="error"  />
+<Radio label="Warning color Radio" color="warning"  />
+<Radio label="Success color Radio" color="success"  />
+```
+
+![radio_advanced](../assets/radio_advanced.png)
+
+Code example:
+```jsx
+<Radio label="initialValue = true" initialValue />
+<Radio label="radioInnerStyle used" initialValue radioInnerStyle={{ backgroundColor: "#FE2472" }} />
+<Radio label="radioOuterStyle used" radioOuterStyle={{ backgroundColor: '#FF9C09' }} />
+<Radio label="containerStyle and labelStyle used" containerStyle={{ backgroundColor: "#FE247220" }} labelStyle={{ color: '#1232FF' }} />
 ```
 
 ### Props
