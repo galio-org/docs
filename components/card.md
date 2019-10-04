@@ -1,5 +1,5 @@
 # Card
-Did anybody say you need a card? Good think we have one.
+Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. 
 
 <p align="center">
  <img src="https://i.imgur.com/P9eFZap.png" />

@@ -1,5 +1,5 @@
 # Block
-The main component used to create almost everything in your app.
+This component is the main component block used to build everything in Galio and any type of layout. There are so many props available for easier access to different styling options that you'll rarely write another `style` prop. 
 
 ### Usage
 Imports:

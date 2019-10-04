@@ -1,5 +1,5 @@
 # Button
-A nice button which suits even the most picky developers.
+A basic button component that is looking good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
 
 <p align="center">
  <img src="https://i.imgur.com/JjkraTc.png" />
