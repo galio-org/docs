@@ -1,6 +1,5 @@
 # Checkbox 
-
-Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. 
+Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. Using the `onChange` function will enable you to call a function when the state value changes, so basically whenever the user is tapping the Checkbox.
 
 
 ### Usage

@@ -1,5 +1,4 @@
 # Radio
-
 Check out how awesome these radio buttons look! Who wouldn't want to use them?
 
 ### Usage

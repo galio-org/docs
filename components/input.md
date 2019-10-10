@@ -1,5 +1,5 @@
 # Input
-A simple customizable input you'll love using.
+Built on top of React Native's `TextInput` component, this basic component which allows the user to enter text was styled based on Galio's own identity theme.
 
 <p align="center">
  <img src="assets/10.png" />
@@ -12,7 +12,7 @@ import { Input, Block } from 'galio-framework';
 ```
 
 <p align="center">
-  <img src="../assets/input_simple.png" alt="Input simple example react native" />
+  <img src="../assets/input_simple.png" alt="TextInput simple example react native" />
 </p>
 
 Code example:

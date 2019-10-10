@@ -1,5 +1,4 @@
 # Slider
-
 We all need a slider in our application. This is a JavaScript component built with the PanResponder and Animated APIs.
 
 <p align="center">
