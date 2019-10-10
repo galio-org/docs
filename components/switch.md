@@ -1,6 +1,5 @@
 # Switch
-
-This component was built on top of React Native's Switch component and so it inherits all the props the native component has.
+This component was built on top of React Native's Switch component and so it inherits all the props the native component has. This is a controlled component which requires the `onValueChange` prop so you can update the `value` state. 
 
 <p align="center">
   <img src="https://i.imgur.com/0HX86f2.png" />

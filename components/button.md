@@ -1,5 +1,5 @@
 # Button
-A nice button which suits even the most picky developers.
+A basic button component that is looking good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
 
 <p align="center">
  <img src="https://i.imgur.com/JjkraTc.png" />
@@ -11,9 +11,29 @@ Imports:
 import { Button } from 'galio-framework';
 ```
 
-Simple example:
+<p align="center">
+  <img src="../assets/buttons_simple.png" alt="Buttons simple example react native"/>
+</p>
+
+Code example:
 ```jsx
-<Button>Press here!</Button>
+<Button>primary</Button>
+<Button color="info">info</Button>
+<Button color="success">success</Button>
+<Button color="warning">warning</Button>
+<Button color="error">error</Button>
+```
+<p align="center">
+  <img src="../assets/buttons_advanced.png" alt="Buttons advanced example react native" />
+</p>
+
+Code example:
+```jsx
+<Button capitalize size="small">small size capitalize</Button>
+<Button round uppercase color="error">round uppercase</Button>
+<Button onlyIcon icon="tags" iconFamily="antdesign" iconSize={30} color="warning" iconColor="#fff" style={{ width: 40, height: 40 }}>warning</Button>
+<Button color="#50C7C7" shadowless>custom color and shadowless</Button>
+<Button round size="small" color="success">round and small</Button>
 ```
 
 ### Props

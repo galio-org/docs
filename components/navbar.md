@@ -1,5 +1,5 @@
 # NavBar
-How are your clients going to know which screen they're visiting if you don't have a navbar component?
+A powerful navigation header, the navbar includes support for styling just the way you want it.
 
 ### Usage
 Imports:

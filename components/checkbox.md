@@ -1,29 +1,44 @@
 # Checkbox 
+Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. Using the `onChange` function will enable you to call a function when the state value changes, so basically whenever the user is tapping the Checkbox.
 
-Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. 
-
-<p align="center">
-  <img src="https://i.imgur.com/Vnyf1pJ.png" />
-</p>
 
 ### Usage
 Imports:
 ```js
 import { Checkbox } from 'galio-framework';
 ```
+<p align="center">
+  <img src="../assets/checkbox_simple.png" alt="Checkbox simple example react native" />
+</p>
 
-Simple example:
+Code example:
 ```jsx
-<Checkbox
-  checkboxStyle={{
-    borderWidth: 3
-  }}
-  color={galioTheme.COLORS.PRIMARY}
-  labelStyle={{
-    color: galioTheme.COLORS.TEXT,
-  }}
-  label="Thanks for checking this checkbox"
-/>
+<Checkbox color="primary" label="Primary Checkbox" />
+<Checkbox color="info" label="Info Checkbox" />
+<Checkbox color="error" label="Error Checkbox" />
+<Checkbox color="warning" label="Warning Checkbox" />
+<Checkbox color="success" label="Success Checkbox" />
+```
+<p align="center">
+  <img src="../assets/checkbox_advanced.png" alt="Checkbox advanced example react native" />
+</p>
+
+Code example:
+```jsx
+<Checkbox color="primary" flexDirection="row-reverse" label="row-reverse checkbox" />
+<Checkbox color="info" initialValue={true} label="initialValue set to true" />
+<Checkbox color="error" initialValue={true} label="different icon" iconFamily="font-awesome" iconName="plane" />
+<Checkbox color="warning" labelStyle={{ color: '#FF9C09' }} label="labelStyle used here" />
+<Checkbox color="success" image="https://images.unsplash.com/photo-1569780655478-ecffea4c165c?ixlib=rb-1.2.1" flexDirection="column-reverse"/>
+```
+
+<p align="center">
+  <img src="../assets/checkbox_onChange.gif" alt="Checkbox advanced onChange example react native" />
+</p>
+
+Code example:
+```js
+<Checkbox color="warning" onChange={() => alert('Galio is cool')} label="onChange is here" />
 ```
 
 ### Props
