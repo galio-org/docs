@@ -12,7 +12,7 @@ import { Button } from 'galio-framework';
 ```
 
 <p align="center">
-  <img src="../assets/buttons_simple.png" alt="Buttons simple example react native"/>
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/buttons_simple.png" alt="Buttons simple example react native"/>
 </p>
 
 Code example:
@@ -24,7 +24,7 @@ Code example:
 <Button color="error">error</Button>
 ```
 <p align="center">
-  <img src="../assets/buttons_advanced.png" alt="Buttons advanced example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/buttons_advanced.png" alt="Buttons advanced example react native" />
 </p>
 
 Code example:

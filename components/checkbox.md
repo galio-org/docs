@@ -8,7 +8,7 @@ Imports:
 import { Checkbox } from 'galio-framework';
 ```
 <p align="center">
-  <img src="../assets/checkbox_simple.png" alt="Checkbox simple example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/checkbox_simple.png" alt="Checkbox simple example react native" />
 </p>
 
 Code example:
@@ -20,7 +20,7 @@ Code example:
 <Checkbox color="success" label="Success Checkbox" />
 ```
 <p align="center">
-  <img src="../assets/checkbox_advanced.png" alt="Checkbox advanced example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/checkbox_advanced.png" alt="Checkbox advanced example react native" />
 </p>
 
 Code example:
@@ -33,7 +33,7 @@ Code example:
 ```
 
 <p align="center">
-  <img src="../assets/checkbox_onChange.gif" alt="Checkbox advanced onChange example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/checkbox_onChange.gif" alt="Checkbox advanced onChange example react native" />
 </p>
 
 Code example:

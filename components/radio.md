@@ -8,7 +8,7 @@ import { Radio } from 'galio-framework';
 ```
 
 <p align="center">
-  <img src="../assets/radio_simple.png" alt="Radio simple example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/radio_simple.png" alt="Radio simple example react native" />
 </p>
 
 Code example:
@@ -21,7 +21,7 @@ Code example:
 ```
 
 <p align="center">
-  <img src="../assets/radio_advanced.png" alt="Radio advanced example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/radio_advanced.png" alt="Radio advanced example react native" />
 </p>
 
 Code example:

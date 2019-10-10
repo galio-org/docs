@@ -12,7 +12,7 @@ import { Input, Block } from 'galio-framework';
 ```
 
 <p align="center">
-  <img src="../assets/input_simple.png" alt="TextInput simple example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/input_simple.png" alt="TextInput simple example react native" />
 </p>
 
 Code example:
@@ -25,7 +25,7 @@ Code example:
 <Input placeholder="success" color={theme.COLORS.SUCCESS} style={{ borderColor: theme.COLORS.SUCCESS }} placeholderTextColor={theme.COLORS.SUCCESS}/>
 ```
 <p align="center">
-  <img src="../assets/input_advanced.png" alt="Input advanced example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/input_advanced.png" alt="Input advanced example react native" />
 </p>
 
 Code example:

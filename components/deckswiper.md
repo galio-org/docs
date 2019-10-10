@@ -2,7 +2,7 @@
 Swipe left, swipe right or don't swipe at all, this component is built to accept any type of component and make it swipeable. Galio's community plans on creating more props for easier access and manipulation of the swipe animation.
 
 <p align="center">
-  <img src="../assets/deck-swiper.gif" alt="Deck Swiper example react native" />
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/deck-swiper.gif" alt="Deck Swiper example react native" />
 </p>
 
 ### Usage
