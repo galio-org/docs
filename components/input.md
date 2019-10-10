@@ -11,7 +11,9 @@ Imports:
 import { Input, Block } from 'galio-framework';
 ```
 
-![input_simple](../assets/input_simple.png)
+<p align="center">
+  <img src="../assets/input_simple.png" alt="Input simple example react native" />
+</p>
 
 Code example:
 ```jsx
@@ -22,8 +24,9 @@ Code example:
 <Input placeholder="error" color={theme.COLORS.ERROR} style={{ borderColor: theme.COLORS.ERROR }} placeholderTextColor={theme.COLORS.ERROR}/>
 <Input placeholder="success" color={theme.COLORS.SUCCESS} style={{ borderColor: theme.COLORS.SUCCESS }} placeholderTextColor={theme.COLORS.SUCCESS}/>
 ```
-
-![input_advanced](../assets/input_advanced.png)
+<p align="center">
+  <img src="../assets/input_advanced.png" alt="Input advanced example react native" />
+</p>
 
 Code example:
 ```jsx

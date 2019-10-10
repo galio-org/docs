@@ -11,7 +11,9 @@ Imports:
 import { Button } from 'galio-framework';
 ```
 
-![buttons_simple](../assets/buttons_simple.png)
+<p align="center">
+  <img src="../assets/buttons_simple.png" alt="Buttons simple example react native"/>
+</p>
 
 Code example:
 ```jsx
@@ -21,8 +23,9 @@ Code example:
 <Button color="warning">warning</Button>
 <Button color="error">error</Button>
 ```
-
-![buttons_advanced](../assets/buttons_advanced.png)
+<p align="center">
+  <img src="../assets/buttons_advanced.png" alt="Buttons advanced example react native" />
+</p>
 
 Code example:
 ```jsx

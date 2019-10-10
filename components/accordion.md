@@ -1,7 +1,9 @@
 # Accordion
 This accordion component made by Galio is easily costumisable. Built with Flatlist, this expandable list can be used to only show relevant information and save space in your screen.
 
-![Accordion](../assets/accordion.gif)
+<p align="center">
+  <img src="../assets/accordion.gif" alt="Accordion example react native" />
+</p>
 
 ### Usage
 Imports:

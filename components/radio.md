@@ -2,17 +2,15 @@
 
 Check out how awesome these radio buttons look! Who wouldn't want to use them?
 
-<p align="center">
-  <img src="https://i.imgur.com/3J49DW9.png">
-</p>
-
 ### Usage
 Imports:
 ```js
 import { Radio } from 'galio-framework';
 ```
 
-![radio_simple](../assets/radio_simple.png)
+<p align="center">
+  <img src="../assets/radio_simple.png" alt="Radio simple example react native" />
+</p>
 
 Code example:
 ```jsx
@@ -23,7 +21,9 @@ Code example:
 <Radio label="Success color Radio" color="success"  />
 ```
 
-![radio_advanced](../assets/radio_advanced.png)
+<p align="center">
+  <img src="../assets/radio_advanced.png" alt="Radio advanced example react native" />
+</p>
 
 Code example:
 ```jsx

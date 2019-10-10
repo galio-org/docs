@@ -2,17 +2,15 @@
 
 Checkboxes allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. 
 
-<p align="center">
-  <img src="https://i.imgur.com/Vnyf1pJ.png" />
-</p>
 
 ### Usage
 Imports:
 ```js
 import { Checkbox } from 'galio-framework';
 ```
-
-![checkbox_simple](../assets/checkbox_simple.png)
+<p align="center">
+  <img src="../assets/checkbox_simple.png" alt="Checkbox simple example react native" />
+</p>
 
 Code example:
 ```jsx
@@ -22,8 +20,9 @@ Code example:
 <Checkbox color="warning" label="Warning Checkbox" />
 <Checkbox color="success" label="Success Checkbox" />
 ```
-
-![checkbox_advanced](../assets/checkbox_advanced.png)
+<p align="center">
+  <img src="../assets/checkbox_advanced.png" alt="Checkbox advanced example react native" />
+</p>
 
 Code example:
 ```jsx
@@ -34,7 +33,9 @@ Code example:
 <Checkbox color="success" image="https://images.unsplash.com/photo-1569780655478-ecffea4c165c?ixlib=rb-1.2.1" flexDirection="column-reverse"/>
 ```
 
-![checkbox_onChange](../assets/checkbox_onChange.gif)
+<p align="center">
+  <img src="../assets/checkbox_onChange.gif" alt="Checkbox advanced onChange example react native" />
+</p>
 
 Code example:
 ```js
