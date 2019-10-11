@@ -1,7 +1,9 @@
 # Toast Notification
 Toast notifications appear when the user finishes an action and you want to show him a piece of information without redirecting him to another screen.
 
-![Toast Notification](../assets/Toast-notification.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/galio-org/docs/master/assets/Toast-notification.gif" alt="Radio simple example react native" />
+</p>
 
 ### Usage
 Imports:
