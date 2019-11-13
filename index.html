@@ -48,7 +48,7 @@
       .sidebar-nav > a {
         text-align: center;
       }
-      .sidebar-nav a img {
+      .sidebar-nav .logo {
         width: 120px;
       }
       .sidebar-nav > a p {
@@ -63,6 +63,108 @@
         color: #fff;
         background-color: #ff147c;
       }
+      .page_toc {
+        margin-top: 75px;
+      }
+      .page_toc div[class^="lv"] a:hover span {
+        color: #FE2472 !important;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper {
+        padding: 0px !important;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper a {
+        display: flex;
+        flex-direction: row;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper .cf-img-wrapper img{
+        max-width: 65px !important;
+        max-height: 65px !important;
+        margin-right: 0px !important;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper .cf-img-wrapper {
+        float: none !important;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper .cf-text {
+        max-width: 150px;
+        align-self: flex-start;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper a{
+        white-space:normal !important;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper .cf-powered-by {
+        margin-top: 8px !important;
+        background-color: hsla(0, 0%, 0%, 0.05);
+        text-align: center;
+        font-size: 9px !important;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 2.2;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 0%, 0.8);
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper .cf-powered-by img {
+        max-width: 100%;
+      }
+
+        /*float: right;
+      }
+      #sidebar-nav-codefund #codefund .cf-wrapper a::after {
+        content: "";
+        clear: both;
+        display: table;
+      }*/
+      /*
+      .code-fund{
+        margin: 0;
+        bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        z-index: 6;
+        font-size: 12px;
+        line-height: 1.5em;
+        background-color: #fff;
+        border-radius: 4px;
+      }
+      .code-fund .cf-wrapper{
+        padding: 10px !important;
+        width: 150px;
+        background-color: #fff !important;
+      }
+      .code-fund .cf-wrapper img{
+        width: 100%;
+        margin-top: 0 !important;
+        margin-bottom: 8px;
+        margin-right: 8px;
+      }
+      .code-fund .cf-wrapper img[data-src="impression_url"]{
+        position: fixed;
+        left: -1000px;
+        top: -1000px;
+      }
+      .code-fund .cf-wrapper img[data-src="impression_url"] .cf-img-wrapper{
+        margin-right: 0 !important;
+      }
+      @media(min-width:1300px){
+        .code-fund{
+          max-width: 175px;
+          float: right;
+          position: fixed;
+          right: 30px;
+          bottom: 2%;
+        }
+      }
+      @media(max-width:1299px){
+        .code-fund{
+          position: relative;
+          border: 1px solid #f2f2f2;
+          margin-top: 20px;
+          border-radius: 4px;
+        }
+        .code-fund .cf-wrapper{
+            width: auto;
+          }
+      }
+*/
     </style>
     <!-- Google Tag Manager -->
     <script>
@@ -90,6 +192,64 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script>
+        (function(window) {
+    window.DocsifyCodefund = {
+      scriptEl: null,
+      create: function(codefundId) {
+        return function(hook, vm) {
+          hook.ready(function() {
+            window.DocsifyCodefund.injectCodeFundStyle();
+          })
+  
+          hook.doneEach(function () {
+            window.DocsifyCodefund.injectCodeFundScript(codefundId);
+            window.DocsifyCodefund.injectCodeFundContainer();
+          })
+        }
+      },
+  
+      injectCodeFundContainer() {
+        let nav = document.getElementById('sidebar-nav-codefund')
+  
+        let codefundContainer = document.createElement('div')
+        codefundContainer.id = 'codefund'
+        codefundContainer.className = 'code-fund'
+        nav.insertBefore(codefundContainer, nav.firstChild)
+  
+        if (document.getElementsByClassName('cf-wrapper').length === 0) {
+          window._codefund && window._codefund.serve();
+        }
+      },
+  
+      injectCodeFundScript(codefundId) {
+        if (window.DocsifyCodefund.scriptEl) {
+          window.DocsifyCodefund.scriptEl.remove()
+        }
+  
+        var script = document.createElement('script')
+        script.src = "https://codefund.io/properties/" + codefundId + "/funder.js"
+        script.async = "async"
+        document.body.appendChild(script)
+        window.DocsifyCodefund.scriptEl = script
+      },
+  
+      injectCodeFundStyle() {
+        var style = document.createElement('style');
+        window.DocsifyCodefund.injectCodeFundContainer();
+        var css = '#cf span.cf-wrapper { background-color: transparent!important } #cf a.cf-text { color: #444!important; font-weight: 400!important; font-size: 10px!important }';
+  
+        style.type = 'text/css';
+        if (style.styleSheet){
+          style.styleSheet.cssText = css;
+        } else {
+          style.appendChild(document.createTextNode(css));
+        }
+        document.head.appendChild(style);
+      }
+    }
+  })(window)
+      </script>
     <div id="app"></div>
     <script>
       window.$docsify = {
@@ -106,24 +266,20 @@
         mergeNavbar: true,
         // load sidebar
         loadSidebar: true,
+        subMaxLevel: 3,
         // load navbar
         loadNavbar: true,
         coverpage: true,
-        auto2top: true
+        auto2top: true,
+        plugins: [
+          DocsifyCodefund.create(539)
+        ]
       };
     </script>
+    
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-    <script>
-      ((window.gitter = {}).chat = {}).options = {
-        room: "galio-community/Lobby"
-      };
-    </script>
-    <script
-      src="https://sidecar.gitter.im/dist/sidecar.v1.js"
-      async
-      defer
-    ></script>
+
   </body>
 </html>

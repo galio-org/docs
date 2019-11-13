@@ -1,7 +1,8 @@
 <a href="http://galio.io">
-<img src="assets/logo.png" />
+<img class="logo" src="assets/logo.png" />
 <p>Galio</p>
 </a>
+<div id="sidebar-nav-codefund"></div>
 
 * [**Get Started**](/README.md)
 
