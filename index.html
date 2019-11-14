@@ -254,6 +254,118 @@
     </script>
     <div id="app"></div>
     <script>
+      (function injectDiscord(window) {
+        window.injectDiscord = {
+          scriptEl: null,
+          create: function(serverID) {
+            return function(hook, vm) {
+              hook.ready(function() {
+                window.injectDiscord.injectDiscordButtonStyle();
+              });
+
+              hook.doneEach(function() {
+                window.injectDiscord.injectDiscordContainer();
+                window.injectDiscord.injectDiscordScript(serverID);
+              });
+            };
+          },
+          injectDiscordContainer(){
+            // creating the Button container 
+            let discordButton = document.createElement("div");
+            discordButton.id = "discord-button";
+            discordButton.innerHTML = '<div style="margin-top: 9px; display: flex;"><img style="width: 17px; height: 17px; display: inline-block; margin-right: 5px; margin-top: 4px;" src="https://discordapp.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg" /><p style="margin-top: 0px; font-size: 14px; display: inline-block; color: white; font-weight: 600;">Open Discord</p></div>';
+            document.body.appendChild(discordButton);
+
+            // creating the Discord container
+            let discordContainer = document.createElement("div");
+            discordContainer.id = "discord";
+            document.body.appendChild(discordContainer)
+          },
+          injectDiscordScript(serverID) {
+            if (window.injectDiscord.scriptEl) {
+              window.injectDiscord.scriptEl.remove();
+            }
+
+            var discordDiv = document.getElementById('discord');
+            discordDiv.innerHTML = `<iframe src="https://discordapp.com/widget?id=${serverID}&theme=dark" 
+            width="300" height="500" allowtransparency="true" 
+            frameborder="0"></iframe>`;
+
+            var discordButtonDiv = document.getElementById('discord-button');
+            discordButtonDiv.addEventListener("click",function() {
+              discordDiv.classList.toggle("opened");
+            })
+
+
+            var script = document.createElement("script");
+            document.body.appendChild(script);
+            window.injectDiscord.scriptEl = script;
+          },
+          injectDiscordButtonStyle() {
+            var style = document.createElement("style");
+            //window.injectDiscord.injectDiscordContainer();
+            var css =
+              `
+                #discord {
+                  opacity: 0;
+                  position: fixed;
+                  right: -370px;
+                  bottom: 40px;
+                  animation: y .5s cubic-bezier(.23,1,.32,1);
+                  transition: all .5s ease;
+                }
+                #discord.opened{
+                  opacity: 1;
+                  right: 20px !important;
+                  animation: k .5s cubic-bezier(.23,1,.32,1);
+                  transition: all .5s ease;
+                }
+                
+                #discord-button {
+                  bottom: 0; 
+                  position: fixed; 
+                  right: 20px;
+                  width: 140px;
+                  height: 40px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  border-radius: 5px 5px 0px 0px;
+                  align-content: center;
+                  background-color: #7289da;
+                  -webkit-touch-callout: none; /* iOS Safari */
+                  -webkit-user-select: none; /* Safari */
+                  -khtml-user-select: none; /* Konqueror HTML */
+                    -moz-user-select: none; /* Old versions of Firefox */
+                      -ms-user-select: none; /* Internet Explorer/Edge */
+                          user-select: none; /* Non-prefixed version, currently
+                                                supported by Chrome, Opera and Firefox */
+                }
+                #discord-button:hover {
+                  cursor: pointer;
+                }
+
+                @keyframes k {
+                  from {right:-370px;}
+                  to {right:20px;}
+                }
+                @keyframes y {
+                  from {right:20px;}
+                  to {right:-370px;}
+                }
+              `;
+
+            style.type = "text/css";
+            if (style.styleSheet) {
+              style.styleSheet.cssText = css;
+            } else {
+              style.appendChild(document.createTextNode(css));
+            }
+            document.head.appendChild(style);
+          }
+        };
+      })(window);
+    </script>
+    <script>
       window.$docsify = {
         // link to galio github
         repo: "https://github.com/galio-org/galio",
@@ -273,75 +385,12 @@
         loadNavbar: true,
         coverpage: true,
         auto2top: true,
-        plugins: [DocsifyCodefund.create(539)]
+        plugins: [DocsifyCodefund.create(539), injectDiscord.create('634211925399437322')]
       };
     </script>
 
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-    <script>
-      (function injectDiscord(window) {
-        window.injectDiscord = {
-          scriptEl: null,
-          create: function(serverID) {
-            return function(hook, vm) {
-              hook.ready(function() {
-                window.injectDiscord.injectDiscordButtonStyle();
-              });
-
-              hook.doneEach(function() {
-                window.injectDiscord.injectDiscordScript(serverID);
-                window.injectDiscord.injectDiscordContainer();
-              });
-            };
-          },
-          injectDiscordContainer(){
-            let nav = document.getElementById("discord-here");
-
-            let discordContainer = document.createElement("div");
-            discordContainer.id = "discord";
-            nav.insertBefore(discordContainer, nav.firstChild);
-            /*
-            if (document.getElementsByClassName("cf-wrapper").length === 0) {
-              window._codefund && window._codefund.serve();
-            }
-            */
-          },
-          injectDiscordScript(serverID) {
-            if (window.injectDiscord.scriptEl) {
-              window.injectDiscord.scriptEl.remove();
-            }
-
-            var script = document.createElement("script");
-            /*script.src =
-              "https://codefund.io/properties/" + codefundId + "/funder.js";*/
-            script.async = "async";
-            document.body.appendChild(script);
-            window.injectDiscord.scriptEl = script;
-            ```
-            <iframe src="https://discordapp.com/widget?id=634211925399437322&theme=dark" 
-            width="350" height="500" allowtransparency="true" 
-            frameborder="0"></iframe>
-            ```
-          },
-
-          injectDiscordButtonStyle() {
-            var style = document.createElement("style");
-            window.injectDiscord.injectDiscordContainer();
-            var css =
-              "#cf span.cf-wrapper { background-color: transparent!important } #cf a.cf-text { color: #444!important; font-weight: 400!important; font-size: 10px!important }";
-
-            style.type = "text/css";
-            if (style.styleSheet) {
-              style.styleSheet.cssText = css;
-            } else {
-              style.appendChild(document.createTextNode(css));
-            }
-            document.head.appendChild(style);
-          }
-        };
-      })(window);
-    </script>
   </body>
 </html>
