@@ -30,8 +30,8 @@
         --theme-color: #ff006e;
       }
       .cover:before {
-        /*background: #ee9ca7;  /* fallback for old browsers 
-      background: -webkit-linear-gradient(to bottom, #ffdde1, #fcbac3);  /* Chrome 10-25, Safari 5.1-6 
+        /*background: #ee9ca7;  /* fallback for old browsers
+      background: -webkit-linear-gradient(to bottom, #ffdde1, #fcbac3);  /* Chrome 10-25, Safari 5.1-6
       background: linear-gradient(to bottom, #ffdde1, #fcbac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
       */
         background-color: white;
@@ -69,102 +69,8 @@
       .page_toc div[class^="lv"] a:hover span {
         color: #fe2472 !important;
       }
-      #sidebar-nav-codefund #codefund .cf-wrapper {
-        padding: 0px !important;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper a {
-        display: flex;
-        flex-direction: row;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper .cf-img-wrapper img {
-        max-width: 65px !important;
-        max-height: 65px !important;
-        margin-right: 0px !important;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper .cf-img-wrapper {
-        float: none !important;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper .cf-text {
-        max-width: 150px;
-        align-self: flex-start;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper a {
-        white-space: normal !important;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper .cf-powered-by {
-        margin-top: 8px !important;
-        background-color: hsla(0, 0%, 0%, 0.05);
-        text-align: center;
-        font-size: 9px !important;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        line-height: 2.2;
-        text-transform: uppercase;
-        color: hsla(0, 0%, 0%, 0.8);
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper .cf-powered-by img {
-        max-width: 100%;
-      }
 
-      /*float: right;
-      }
-      #sidebar-nav-codefund #codefund .cf-wrapper a::after {
-        content: "";
-        clear: both;
-        display: table;
-      }*/
-      /*
-      .code-fund{
-        margin: 0;
-        bottom: 0%;
-        display: flex;
-        flex-direction: column;
-        z-index: 6;
-        font-size: 12px;
-        line-height: 1.5em;
-        background-color: #fff;
-        border-radius: 4px;
-      }
-      .code-fund .cf-wrapper{
-        padding: 10px !important;
-        width: 150px;
-        background-color: #fff !important;
-      }
-      .code-fund .cf-wrapper img{
-        width: 100%;
-        margin-top: 0 !important;
-        margin-bottom: 8px;
-        margin-right: 8px;
-      }
-      .code-fund .cf-wrapper img[data-src="impression_url"]{
-        position: fixed;
-        left: -1000px;
-        top: -1000px;
-      }
-      .code-fund .cf-wrapper img[data-src="impression_url"] .cf-img-wrapper{
-        margin-right: 0 !important;
-      }
-      @media(min-width:1300px){
-        .code-fund{
-          max-width: 175px;
-          float: right;
-          position: fixed;
-          right: 30px;
-          bottom: 2%;
-        }
-      }
-      @media(max-width:1299px){
-        .code-fund{
-          position: relative;
-          border: 1px solid #f2f2f2;
-          margin-top: 20px;
-          border-radius: 4px;
-        }
-        .code-fund .cf-wrapper{
-            width: auto;
-          }
-      }
-*/
+
     </style>
     <!-- Google Tag Manager -->
     <script>
@@ -193,63 +99,116 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script>
+
       (function(window) {
-        window.DocsifyCodefund = {
+        window.DocsifyCarbon = {
           scriptEl: null,
-          create: function(codefundId) {
+          create: function(CarbonId, CarbonPlacement) {
             return function(hook, vm) {
               hook.ready(function() {
-                window.DocsifyCodefund.injectCodeFundStyle();
-              });
+                window.DocsifyCarbon.injectCarbonStyle();
+              })
 
-              hook.doneEach(function() {
-                window.DocsifyCodefund.injectCodeFundScript(codefundId);
-                window.DocsifyCodefund.injectCodeFundContainer();
-              });
-            };
-          },
-
-          injectCodeFundContainer() {
-            let nav = document.getElementById("sidebar-nav-codefund");
-
-            let codefundContainer = document.createElement("div");
-            codefundContainer.id = "codefund";
-            codefundContainer.className = "code-fund";
-            nav.insertBefore(codefundContainer, nav.firstChild);
-
-            if (document.getElementsByClassName("cf-wrapper").length === 0) {
-              window._codefund && window._codefund.serve();
+              hook.doneEach(function () {
+                window.DocsifyCarbon.injectCarbonScript(CarbonId, CarbonPlacement);
+              })
             }
           },
 
-          injectCodeFundScript(codefundId) {
-            if (window.DocsifyCodefund.scriptEl) {
-              window.DocsifyCodefund.scriptEl.remove();
-            }
+          injectCarbonScript: function(CarbonId, CarbonPlacement) {
+            if (document.getElementById("carbonads") === null) {
 
-            var script = document.createElement("script");
-            script.src =
-              "https://codefund.io/properties/" + codefundId + "/funder.js";
-            script.async = "async";
-            document.body.appendChild(script);
-            window.DocsifyCodefund.scriptEl = script;
+              if (window.DocsifyCarbon.scriptEl) {
+                window.DocsifyCarbon.scriptEl.remove()
+              }
+
+              var script = document.createElement('script')
+              script.src="https://cdn.carbonads.com/carbon.js?serve=" + CarbonId + "&placement=" + CarbonPlacement
+              script.async = "async"
+              script.id = "_carbonads_js"
+              window.DocsifyCarbon.scriptEl = script
+
+              var nav = document.getElementsByClassName('sidebar-nav-carbon');
+              nav[0].insertBefore(script, nav[0].firstChild);
+            }
           },
 
-          injectCodeFundStyle() {
-            var style = document.createElement("style");
-            window.DocsifyCodefund.injectCodeFundContainer();
-            var css =
-              "#cf span.cf-wrapper { background-color: transparent!important } #cf a.cf-text { color: #444!important; font-weight: 400!important; font-size: 10px!important }";
+          injectCarbonStyle: function() {
+            var style = document.createElement('style');
+            var css = `
+            #carbonads {
+              display: block;
+              overflow: hidden;
+              padding: 1em;
+              max-width: 300px;
+              background: #fff;
+              text-align: center;
+              font-size: 14px;
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+              line-height: 1.5;
+            }
 
-            style.type = "text/css";
-            if (style.styleSheet) {
+            #carbonads a {
+              color: inherit;
+              text-decoration: none;
+              white-space: break-spaces;
+              max-width: 190px;
+            }
+
+            #carbonads a:hover {
+              color: inherit;
+            }
+
+            #carbonads span {
+              display: block;
+              overflow: hidden;
+            }
+
+            .carbon-img {
+              display: block;
+              margin: 0 auto 8px;
+              line-height: 1;
+            }
+
+            .carbon-img img{
+              margin-right: 0 !important;
+            }
+
+            .carbon-text {
+              display: block;
+              margin-bottom: 8px;
+            }
+
+            .carbon-poweredby {
+              display: block;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 10px;
+              line-height: 1;
+            }
+
+            @media (max-width: 576px){
+              #carbonads{
+                margin: auto;
+                margin-top: 30px;
+              }
+
+              #carbonads .carbon-poweredby{
+                left: 143px;
+              }
+
+            }`;
+
+            style.type = 'text/css';
+            if (style.styleSheet){
               style.styleSheet.cssText = css;
             } else {
               style.appendChild(document.createTextNode(css));
             }
             document.head.appendChild(style);
           }
-        };
+
+        }
       })(window);
     </script>
     <div id="app"></div>
@@ -270,7 +229,7 @@
             };
           },
           injectDiscordContainer(){
-            // creating the Button container 
+            // creating the Button container
             let discordButton = document.createElement("div");
             discordButton.id = "discord-button";
             discordButton.innerHTML = '<div style="margin-top: 9px; display: flex;"><img style="width: 17px; height: 17px; display: inline-block; margin-right: 5px; margin-top: 4px;" src="https://discordapp.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg" /><p style="margin-top: 0px; font-size: 14px; display: inline-block; color: white; font-weight: 600;">Open Discord</p></div>';
@@ -287,8 +246,8 @@
             }
 
             var discordDiv = document.getElementById('discord');
-            discordDiv.innerHTML = `<iframe src="https://discordapp.com/widget?id=${serverID}&theme=dark" 
-            width="300" height="500" allowtransparency="true" 
+            discordDiv.innerHTML = `<iframe src="https://discordapp.com/widget?id=${serverID}&theme=dark"
+            width="300" height="500" allowtransparency="true"
             frameborder="0"></iframe>`;
 
             var discordButtonDiv = document.getElementById('discord-button');
@@ -320,10 +279,10 @@
                   animation: k .5s cubic-bezier(.23,1,.32,1);
                   transition: all .5s ease;
                 }
-                
+
                 #discord-button {
-                  bottom: 0; 
-                  position: fixed; 
+                  bottom: 0;
+                  position: fixed;
                   right: 20px;
                   width: 140px;
                   height: 40px;
@@ -385,7 +344,7 @@
         loadNavbar: true,
         coverpage: true,
         auto2top: true,
-        plugins: [DocsifyCodefund.create(539), injectDiscord.create('634211925399437322')]
+        plugins: [DocsifyCarbon.create('CE7IPK3L', 'galioio'), injectDiscord.create('634211925399437322')]
       };
     </script>
 

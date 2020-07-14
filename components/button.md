@@ -1,7 +1,5 @@
 # Button
 
-<div id="codefund" class="code-fund"><!-- fallback content --></div>
-
 A basic button component that is looking good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
 
 <p align="center">
