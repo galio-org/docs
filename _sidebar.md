@@ -2,7 +2,7 @@
 <img class="logo" src="assets/logo.png" />
 <p>Galio</p>
 </a>
-<div id="sidebar-nav-codefund"></div>
+<div class="sidebar-nav-carbon"></div>
 
 * [**Get Started**](/README.md)
 
