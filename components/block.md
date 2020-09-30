@@ -1,5 +1,5 @@
 # Block
-This component is the main component block used to build everything in Galio and any type of layout. There are so many props available for easier access to different styling options that you'll rarely write another `style` prop. 
+This component is the main component block used to build everything in Galio and any type of layout. There are so many props available for easier access to different styling options that you'll rarely write another `style` prop.
 
 ### Usage
 Imports:
@@ -32,3 +32,4 @@ Simple example:
 | space       |    string    |   null  | your options are: 'between', 'around' or 'evenly'  |
 | top         |     bool     |  false  |  alignItems: 'flex-start' alignSelf: 'flex-start'  |
 | width       |    number    |   null  | changes the width of the Block                     |
+| styles | object | {} | styles prop can be used to pass custom styles to different types of block dynamically. Possible keys are **block**, **row**, **center**, **middle**, **top**, **bottom**, **right**, **left**, **shadow**, **fluid**, **card**. All styles passed in the keys, except **_block_** are applied only if their corresponding boolean prop is also true, ie. _styles.row_ will be applied only if _row_ prop is true. |
