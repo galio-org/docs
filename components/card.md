@@ -1,5 +1,5 @@
 # Card
-Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. 
+Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
 
 <p align="center">
  <img src="https://i.imgur.com/P9eFZap.png" />
@@ -45,5 +45,6 @@ Simple example:
 | caption         | string       |         | write your main card's title                                                                     |
 | captionColor    | string       |         | change your caption's color                                                                      |
 | footerStyle     | object       |         | styles for the block wrapping the whole author's section                                         |
+| styles | object | {} | Object that can be used to pass custom styles to various parts of the Card. Possible keys are: **imageBlock**, **image**, **avatar**, **footer**, **title**. These styles are overwritten by any styles that are passed in a tailored prop for any part of Card. For eg. *styles.footer* will be overwritten by *footerStyle*, if both have an common properties |
 
 _The Card components accepts every piece of prop the `<Block />` component accepts. Those will be applied on the `<Block />` which wraps the whole `<Card />` component._
