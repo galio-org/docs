@@ -62,7 +62,9 @@ Code example:
 | borderless           | bool   | false                    | Sets the Input's borderWidth to 0                                                                                                                                 |
 | viewPass             | bool   | false                    | Adds the functionality of pressing a button in order to see your password's letters                                                                               |
 | icon                 | string | null                     | Choose your Icon's name from Expo's icon list                                                                                                                     |
+| iconSize | number | theme.SIZES.BASE * 1.0625 | Prop to pass size for icon |
 | iconColor            | string | null                     | Changes the Icon's color                                                                                                                                          |
+| iconContent | React.Component | null | Prop which takes a rendered component, which is used to render custom content in place of the default Icon component |
 | family               | string | null                     | Choose your Icon's family from the same list                                                                                                                      |
 | color                | string | null                     | Sets the Input's text color.                                                                                                                                      |
 | help                 | string | null                     | Sets a helper line for more information regarding your input.                                                                                                     |
@@ -70,4 +72,9 @@ Code example:
 | right                | bool   | false                    | Sets the Icon to the right of the Input.                                                                                                                          |
 | topHelp              | bool   | true                     | Sets the helper line above the input.                                                                                                                             |
 | bottomHelp           | bool   | false                    | Sets the helper line below the input.                                                                                                                             |
-
+| textInputStyle | object | null | Custom style object for the react-native TextInput |
+| labelStyles | object | {} | Custom style object for the label |
+| helpStyles | object | {} | Custom style object for the help text |
+| onRef | function | null | Function which can be used to access ref of the inner TextInput. Function is called with ref as argument ((ref) => {}) |
+| error | boolean | false | If true, changes color of border and Icon to theme.COLORS.DANGER |
+| styles | object | {} | Object that can be used to pass custom styles to various parts of the Input. Possible keys are: **inputStyle**, **inputContainer**, **rounded**, **borderless**, **inputView**, **inputIcon**, **inputText**, **label**, **helpText**. These styles are overwritten by any styles that are passed in a custom prop for any part of Input. For eg. *styles.label* will be overwritten by *labelStyles*, if both have an common properties |
