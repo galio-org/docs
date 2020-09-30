@@ -1,6 +1,6 @@
 # Button
 
-A basic button component that is looking good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
+A basic button component that looks good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
 
 <p align="center">
  <img src="https://i.imgur.com/JjkraTc.png" />
@@ -43,11 +43,12 @@ Code example:
 |:-----------------------------:|:------------:|:------------------:|:----------------------------------------------------------------------------------------------------:|
 | ...TouchableOpacity.propTypes |              |                    |                                                                                                      |
 | capitalize                    |     bool     |        false       | Transforms the first character in a capital letter                                                   |
-| color                         |    string    |      'primary'     |  your options are: 'primary', 'theme', 'error', 'warning', 'succes', 'transparent' or your own color |
+| color                         |    string    |      'primary'     |  your options are: 'primary', 'theme', 'error', 'warning', 'success', 'transparent' or your own color |
 | disabled                      |     bool     |        false       |                                          Disables the button                                         |
 | icon                          | bool, string |        false       |                             pick whatever icon you want from Expo's icons                            |
 | iconColor                     | bool, string | theme.COLORS.BLACK | sets the icon's color                                                                                |
 | iconFamily                    | bool, string |        false       | pick whatever icon family suits the icon you chose from Expo's icons                                 |
+| iconRight                     | bool, string |        false       | if true, icon is rendered on the right of text                                 |
 | iconSize                      |    number    |         14         |                                         sets the icon's size                                         |
 | loading                       |     bool     |        false       |                         Uses the <ActivityIndicator /> for the loading effect                        |
 | loadingSize                   |    string    |       'small'      |                                  your options are: 'small', 'large'                                  |
@@ -58,4 +59,5 @@ Code example:
 | shadowColor                   | bool, string |        false       | the default shadowColor is based on the button's color but you can also write a specific shadowColor |
 | shadowless                    |     bool     |        false       | removes shadow                                                                                       |
 | size                          |    number    |       'large'      | your options are: 'large', 'small'                                                                   |
+| textStyle                     |    object    |                    | custom style for text inside button                                                                   |
 | uppercase                     |     bool     |        false       | makes all letters uppercase                                                                          |
