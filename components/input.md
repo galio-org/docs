@@ -8,7 +8,7 @@ Built on top of React Native's `TextInput` component, this basic component which
 ### Usage
 Imports:
 ```js
-import { Input, Block } from 'galio-framework';
+import { Input, Block, theme } from 'galio-framework';
 ```
 
 <p align="center">
