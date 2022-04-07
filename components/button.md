@@ -58,4 +58,7 @@ Code example:
 | shadowColor                   | bool, string |        false       | the default shadowColor is based on the button's color but you can also write a specific shadowColor |
 | shadowless                    |     bool     |        false       | removes shadow                                                                                       |
 | size                          |    number    |       'large'      | your options are: 'large', 'small'                                                                   |
+| size                          |    number    |       'large'      | your options are: 'large', 'small'                                                                   |
+| style                         |   stylesheet |         null       | changes the style of the button inside the button                                                    |
+| textStyle                     |   stylesheet |         null       | changes the style of the text inside the button                                                      |
 | uppercase                     |     bool     |        false       | makes all letters uppercase                                                                          |
